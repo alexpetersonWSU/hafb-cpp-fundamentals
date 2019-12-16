@@ -27,6 +27,7 @@ int main()
     switch(code)
     {
     case 'S':
+    case 's':
         cout << "The item is space exploration grade." << endl;
         break;
 
