@@ -21,7 +21,7 @@ $ rm <name>
 ## C++ Basics
 - File extention: `.cpp`
 
-## g++ Compiler
+## g++ Compiler for 1 file
 ```bash
 # To compile
 # -o for output file name
@@ -29,6 +29,15 @@ $ g++ main.cpp -o main
 # To run
 $ ./main.exe
 ```
+
+## g++ Compiler for 2 files
+For example, if you have a library under the `functions.cpp` and `functions.h` files, and you have a driver under `run_functions.cpp` you need to compile as follows:
+```bash
+# to compile, list ALL source (cpp) files
+# -o for output file name
+$ g++ functions.cpp run_functions.cpp -o run_functions
+# to run
+$ ./run_functions.exe
 
 ### C++ File Template
 ```cpp
