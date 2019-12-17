@@ -1,6 +1,6 @@
 #include "my_functions.h"
 // #include <iostream>
-// using namespace std;
+using namespace std;
 
 // // prototype
 // int Sum(int num1, int num2);
@@ -15,8 +15,19 @@ int main()
   cout << "Number before UpdateStep() " << number1 << endl;
   UpdateStep(number1);
   cout << "Number after UpdateStep() " << number1 << endl;
+
+  array<int, 10> temperatures = {-12, 34,67,0,12,44,99,-8,18,33};
+  cout << "The max number of temperatures is: "<< Max10(temperatures) << endl;
+  ClearElements(temperatures);
+  for(auto temp : temperatures)
+  {
+    cout << temp << endl;
+  }
+
   return 0;
 }
+
+
 
 // // Function definition
 // int Sum(int num1, int num2)

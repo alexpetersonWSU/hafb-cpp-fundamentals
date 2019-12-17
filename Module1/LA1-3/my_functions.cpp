@@ -23,3 +23,34 @@ void UpdateStep(int& step) // take the address of the parameter
     step++;
     cout << "New step: " << step << endl;
 }
+
+int Max2(int num1, int num2)
+{
+
+}
+
+int Max3(int num1, int num2)
+{
+
+}
+
+int Max10(const std::array<int, 10>& nums)
+{
+   int max = nums[0];
+   for(auto num : nums)
+   {
+     if(max <= num)
+     {
+       max = num;
+     }
+   }
+   return max;
+}
+
+void ClearElements(std::array<int, 10>& nums)
+{
+  for(int index = 0; index < nums.size(); ++index)
+  {
+    nums[index] = -99;
+  }
+}
