@@ -39,7 +39,13 @@ void FactorModX(int mod_number)
   return;   // optional return on void functions
 }
 
-
+/**
+ * @brief Calculate the number of instances divisible
+ * by the input parameter in the range 1 through the max_range
+ * 
+ * @param mod_number 
+ * @param max_range 
+ */
 void FactorModXRange(int mod_number, int max_range)
 {
   unsigned int count = 0;
@@ -54,4 +60,25 @@ void FactorModXRange(int mod_number, int max_range)
 
   cout << "Result is: " << count << endl;
   return;   // optional return on void functions
+}
+
+/**
+ * @brief Get the Factor Mod X Range object
+ * 
+ * @param mod_number 
+ * @param max_range 
+ * @return unsigned int 
+ */
+unsigned int GetFactorModXRange(int mod_number, int max_range)
+{
+  unsigned int count = 0;
+  // algorithm
+  for(unsigned int x = 1; x <= max_range; ++x)
+{
+   if (x % mod_number == 0)
+  {
+    count++;
+  }
+}
+  return count;
 }
