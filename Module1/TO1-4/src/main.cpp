@@ -2,12 +2,16 @@
 #include "age.h"
 using namespace std;
 
-// Main function
+//Main function
 int main() 
 {
-	int age = 13;
+	int age = 95;
+    cout << "Current age: " << age << endl;
+    ByValueAgeIn5Years(age);
+    cout << "In 5 years, your age is: " << CurrentAge(age) << endl;
+
 	cout << "Current age: " << age << endl; // Prints 95
-	// ByValueAgeIn5Years(age);
+	ByValueAgeIn5Years(age);
   	ByReferenceAgeIn5Years(age);
   	cout << "In 5 years, your age is: " << CurrentAge(age) << endl;
   	if (age >= 18)
