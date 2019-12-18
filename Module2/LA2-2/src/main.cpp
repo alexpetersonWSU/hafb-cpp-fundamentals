@@ -100,7 +100,6 @@ int main() {
     return 1;
   }
 
-
   // reset age and name arrays
   names.fill("");
   ages.fill(-1);
@@ -112,8 +111,6 @@ int main() {
     std::getline(inBoth, names[index]);
     index++;
   }
-
-
 
   // print valid elements in the names and ages array
   for(int num = 0; num < index; ++num)
