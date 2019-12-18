@@ -1,6 +1,6 @@
-#include "carton.h"
 #include <iostream>
 #include <string>
+#include "carton.h"
 
 // Do not use static keyword
 // const double Carton::kMaxSize = 100;
@@ -96,4 +96,10 @@ void Carton::ShowInfo()
 double Carton::Volume() const
 {
     return length_ * width_ * height_;
+}
+
+//Capture output in a outStream
+void Carton::WriteData(std::ostream &out) const
+{
+    out << length_ << "," << width_ << "," << height_ << "," << Volume() << std::endl;
 }
