@@ -14,8 +14,11 @@ public:
     int feet() const {return feet_;}
     void set_feet(int feet) {feet_ = feet;}
 
-    int inches() const {return inches_;}
+    float inches() const {return inches_;}
     void set_inches(int inches) {inches_ = inches;}
     //Other Methods
     void ShowDist() const;
+
+    Distance operator +(Distance d2) const;
+    friend std::ostream& operator <<(std::ostream& os, const Distance& distance);
 };
